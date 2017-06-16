@@ -97,4 +97,11 @@ class HexModifierTest extends TestCase
 		$hex = new \LasseRafn\Hexer\Hex( '#fff' );
 		$hex->lighten(101);
 	}
+
+	public function test_will_return_initial_hex_with_zero_percentage() {
+		$hex = new \LasseRafn\Hexer\Hex('#fff');
+
+		$this->assertEquals('#fff', $hex->lighten());
+		$this->assertEquals('#fff', $hex->darken());
+	}
 }
