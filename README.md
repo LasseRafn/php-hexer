@@ -1,6 +1,7 @@
 # Modify HEX brightness
 
-Ever wanted to lighten or darken a hex in PHP? This package will allow you to.
+Ever wanted to lighten or darken a hex in PHP? This package will allow you to. 
+It's easy to use, fully tested and is very lightweight.
 
 <p align="center"> 
 <a href="https://travis-ci.org/LasseRafn/php-hexer"><img src="https://img.shields.io/travis/LasseRafn/php-hexer.svg?style=flat-square" alt="Build Status"></a>
