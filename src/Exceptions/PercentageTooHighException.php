@@ -1,4 +1,6 @@
-<?php namespace LasseRafn\Hexer\Exceptions;
+<?php
+
+namespace LasseRafn\Hexer\Exceptions;
 
 class PercentageTooHighException extends \Exception
 {
