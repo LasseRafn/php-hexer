@@ -1,4 +1,6 @@
-<?php namespace LasseRafn\Hexer\Exceptions;
+<?php
+
+namespace LasseRafn\Hexer\Exceptions;
 
 class HexTooLongException extends \Exception
 {
