@@ -4,6 +4,7 @@ namespace LasseRafn\Hexer;
 
 use LasseRafn\Hexer\Exceptions\HexTooLongException;
 use LasseRafn\Hexer\Exceptions\HexTooShortException;
+use LasseRafn\Hexer\Exceptions\PercentageIsNotAnInteger;
 use LasseRafn\Hexer\Exceptions\PercentageTooHighException;
 use LasseRafn\Hexer\Exceptions\PercentageTooLowException;
 
@@ -55,8 +56,19 @@ class Hex
         return $this->brightnessModifier->adjustBrightness($this->hex, $percentage * -1);
     }
 
+	/**
+	 * @param integer $percentage
+	 *
+	 * @throws PercentageTooHighException
+	 * @throws PercentageTooLowException
+	 * @throws PercentageIsNotAnInteger
+	 */
     private function validatePercentage($percentage)
     {
+    	if( ! is_int($percentage)) {
+			throw new PercentageIsNotAnInteger("The percentage ({$percentage}) is not an integer.");
+	    }
+
         if ($percentage < 0) {
             throw new PercentageTooLowException("The percentage ({$percentage}) is below zero (0)");
         }
@@ -66,6 +78,10 @@ class Hex
         }
     }
 
+	/**
+	 * @throws HexTooLongException
+	 * @throws HexTooShortException
+	 */
     private function validateHex()
     {
         $hex = str_replace('#', '', $this->hex);

@@ -100,6 +100,14 @@ class HexModifierTest extends TestCase
         $hex->lighten(101);
     }
 
+    public function test_will_fail_with_a_non_integer_percentage_input()
+    {
+        $this->expectException(\LasseRafn\Hexer\Exceptions\PercentageIsNotAnInteger::class);
+
+        $hex = new \LasseRafn\Hexer\Hex('#fff');
+        $hex->lighten('ab12');
+    }
+
     public function test_will_return_initial_hex_with_zero_percentage()
     {
         $hex = new \LasseRafn\Hexer\Hex('#fff');
