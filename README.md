@@ -39,6 +39,8 @@ echo $hex->darken(15);
 
 There are only two methods, that both accept just one parameter.
 
+The constructor accepts one parameter (`hex`) which can optionally contain a hashtag (#). The length has to be between 3-6 characters (without the hashtag).
+
 ### `lighten($percentage)`
 
 Will lighten the color by X percentage. Percentage must be between 0-100. An exception will be thrown otherwise.
