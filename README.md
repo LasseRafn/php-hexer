@@ -7,9 +7,9 @@ It's easy to use, fully tested and is very lightweight.
 <a href="https://travis-ci.org/LasseRafn/php-hexer"><img src="https://img.shields.io/travis/LasseRafn/php-hexer.svg?style=flat-square" alt="Build Status"></a>
 <a href="https://coveralls.io/github/LasseRafn/php-hexer"><img src="https://img.shields.io/coveralls/LasseRafn/php-hexer.svg?style=flat-square" alt="Coverage"></a>
 <a href="https://styleci.io/repos/94527137"><img src="https://styleci.io/repos/94527137/shield?branch=master" alt="StyleCI Status"></a>
-<a href="https://packagist.org/packages/LasseRafn/php-hexer"><img src="https://img.shields.io/packagist/dt/LasseRafn/php-hexer.svg?style=flat-square" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/LasseRafn/php-hexer"><img src="https://img.shields.io/packagist/v/LasseRafn/php-hexer.svg?style=flat-square" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/LasseRafn/php-hexer"><img src="https://img.shields.io/packagist/l/LasseRafn/php-hexer.svg?style=flat-square" alt="License"></a>
+<a href="https://packagist.org/packages/lasserafn/php-hexer"><img src="https://img.shields.io/packagist/dt/lasserafn/php-hexer.svg?style=flat-square" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/lasserafn/php-hexer"><img src="https://img.shields.io/packagist/v/lasserafn/php-hexer.svg?style=flat-square" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/lasserafn/php-hexer"><img src="https://img.shields.io/packagist/l/lasserafn/php-hexer.svg?style=flat-square" alt="License"></a>
 </p>
 
 ## Installation
