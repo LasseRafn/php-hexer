@@ -31,8 +31,8 @@ $hex = new Hex('#333'); // You can leave out the hashtag if you wish.
 echo $hex->lighten(15); // Output: #595959 (if you left out the hashtag, it would not be included in the output either)
 
 // Darken
-$hex = new Hex('#fff');
-echo $hex->darken(15);
+$hex = new Hex('ffffff');
+echo $hex->darken(15); // Output: d9d9d9
 ```
 
 ## Methods
