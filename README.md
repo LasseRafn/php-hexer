@@ -1,7 +1,9 @@
-# Modify HEX brightness
+# HEX color modifier — brightness, conversion and more.
 
-Ever wanted to lighten or darken a hex in PHP? This package will allow you to. 
+Ever wanted to lighten or darken a hex in PHP? This package will allow you to.
 It's easy to use, fully tested and is very lightweight.
+
+**+ Added the ability to convert to RGB**
 
 <p align="center"> 
 <a href="https://travis-ci.org/LasseRafn/php-hexer"><img src="https://img.shields.io/travis/LasseRafn/php-hexer.svg?style=flat-square" alt="Build Status"></a>
@@ -34,11 +36,13 @@ echo $hex->lighten(15); // Output: #595959 (if you left out the hashtag, it woul
 // Darken
 $hex = new Hex('ffffff');
 echo $hex->darken(15); // Output: d9d9d9
+
+// To RGB
+$hex = new Hex('007F00');
+echo $hex->lighten(50)->toRgb(); // Output: ['r' => 128, 'g' => 255, 'b' => 128]
 ```
 
 ## Methods
-
-There are only two methods, that both accept just one parameter.
 
 The constructor accepts one parameter (`hex`) which can optionally contain a hashtag (#). The length has to be between 3-6 characters (without the hashtag).
 
@@ -49,6 +53,10 @@ Will lighten the color by X percentage. Percentage must be between 0-100. An exc
 ### `darken($percentage)`
 
 Will darken the color by X percentage. Percentage must be between 0-100. An exception will be thrown otherwise.
+
+### `toRgb()`
+
+Will return the hex as RGB (an array of `r`, `g`, `b`).
 
 ## Exceptions
 
