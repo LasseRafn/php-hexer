@@ -89,7 +89,7 @@ class HexModifierTest extends TestCase
         $this->expectException(\LasseRafn\Hexer\Exceptions\PercentageTooLowException::class);
 
         $hex = new \LasseRafn\Hexer\Hex('#fff');
-	    (string) $hex->lighten(-10);
+        (string) $hex->lighten(-10);
     }
 
     public function test_will_fail_with_too_high_percentage_input()
@@ -97,7 +97,7 @@ class HexModifierTest extends TestCase
         $this->expectException(\LasseRafn\Hexer\Exceptions\PercentageTooHighException::class);
 
         $hex = new \LasseRafn\Hexer\Hex('#fff');
-	    (string) $hex->lighten(101);
+        (string) $hex->lighten(101);
     }
 
     public function test_will_fail_with_a_non_integer_percentage_input()
@@ -105,7 +105,7 @@ class HexModifierTest extends TestCase
         $this->expectException(\LasseRafn\Hexer\Exceptions\PercentageIsNotAnInteger::class);
 
         $hex = new \LasseRafn\Hexer\Hex('#fff');
-	    (string) $hex->lighten('ab12');
+        (string) $hex->lighten('ab12');
     }
 
     public function test_will_return_initial_hex_with_zero_percentage()

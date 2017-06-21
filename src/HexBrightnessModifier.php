@@ -9,14 +9,14 @@ class HexBrightnessModifier
     const STEPS_MIN = -255;
 
     private $hadHashtag = false;
-	private $parser;
+    private $parser;
 
-	public function __construct()
-	{
-		$this->parser = new HexParser;
-	}
+    public function __construct()
+    {
+        $this->parser = new HexParser();
+    }
 
-	/**
+    /**
      * @param string $hex
      * @param int    $percentage
      *
@@ -26,9 +26,9 @@ class HexBrightnessModifier
     {
         $steps = $this->generateSteps($percentage);
 
-	    $this->hadHashtag = $hex[0] === '#';
+        $this->hadHashtag = $hex[0] === '#';
 
-	    $hex = $this->parser->parse($hex);
+        $hex = $this->parser->parse($hex);
         $hex = $this->adjustHex($hex, $steps);
 
         // Append hashtag if was inputted with a hashtag
