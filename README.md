@@ -39,7 +39,7 @@ echo $hex->darken(15); // Output: d9d9d9
 
 // To RGB
 $hex = new Hex('007F00');
-echo $hex->lighten(50)->toRgb(); // Output: ['r' => 128, 'g' => 255, 'b' => 128]
+$hex->lighten(50)->toRgb(); // Returns: ['r' => 128, 'g' => 255, 'b' => 128]
 ```
 
 ## Methods
